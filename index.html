@@ -136,9 +136,18 @@
       margin-left: 7.5em;
     }
 
-    .tips > p:first-child::before,
+    .tips > p:first-child::before {
+      position: absolute;
+      left: -3em;
+      content: "PS：";
+      color: var(--tip-color); /* 修正为使用变量 */
+    }
+
     .example > p:first-child::before {
-      color: var(--tip-color);
+      position: absolute;
+      left: -7.5em;
+      content: "合法输入示例：";
+      color: var(--tip-color); /* 修正为使用变量 */
     }
 
     a {
